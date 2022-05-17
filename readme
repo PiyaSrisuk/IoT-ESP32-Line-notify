@@ -1,0 +1,34 @@
+1. install library on arduino IDE
+    - Blynk
+    - ESP32
+    - TridentTD_LineNotify
+
+2. blynk cloud
+    - create blynk template
+    - create datastreams virtual pin 0 int value between 0 - 1
+    - create new device from template
+    - setup widget button type switch datastreams choose V0
+
+3. code config
+    - blynk define (3 line) can get form device in blynk cloud
+    - wifi from your own connection
+    - Line token get from Line notify (on web)
+
+4. arduino IDE tool config
+    - Board "ESP32 Wrover Module"
+    - Upload speed "115200"
+    - Flash Frequency "80MHz"
+    - Flash Mode "QIO"
+    - Partition Scheme "Huge APP (3MB No OTA/1MB SPIFFS)"
+    - Core Debug Level "None"
+    - Port "(depend on your PC)"
+
+5. connect the electric circuit
+
+6. upload code
+    - click upload on arduino IDE 
+    - when finished remove wire GND and GPIO 0
+    - click serial monitor on arduino IDE
+    - press reset button on esp32
+    - program will be run
+    - done
